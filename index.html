@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Pediatric Home Care Presentation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+/* BODY */
+
+body{
+height:100vh;
+overflow:hidden;
+background:linear-gradient(135deg,#e0f7ff,#bae6fd,#f0f9ff);
+color:#1e293b;
+}
+
+/* BACKGROUND SHAPES */
+
+body::before,
+body::after{
+
+content:"";
+position:absolute;
+
+width:600px;
+height:600px;
+
+border-radius:50%;
+
+filter:blur(120px);
+opacity:0.4;
+
+z-index:-1;
+}
+
+body::before{
+background:#38bdf8;
+top:-200px;
+left:-200px;
+}
+
+body::after{
+background:#7dd3fc;
+bottom:-200px;
+right:-200px;
+}
+
+/* SLIDES */
+
+.slides{
+position:relative;
+height:100vh;
+}
+
+/* SLIDE */
+
+.slide{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+opacity:0;
+
+transform:translateX(50px);
+
+transition:0.8s;
+
+}
+
+.slide.active{
+opacity:1;
+transform:translateX(0);
+}
+
+/* CARD */
+
+.card{
+
+display:flex;
+
+width:85%;
+height:70vh;
+
+background:rgba(255,255,255,0.75);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
+overflow:hidden;
+
+}
+
+/* TEXT */
+
+.text{
+
+flex:1;
+
+padding:50px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+
+.text h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:10px;
+color:#334155;
+}
+
+.text ul{
+margin-top:10px;
+font-size:18px;
+line-height:1.7;
+}
+
+/* IMAGE */
+
+.image{
+flex:1;
+overflow:hidden;
+}
+
+.image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* BUTTONS */
+
+.controls{
+
+position:fixed;
+
+bottom:20px;
+
+left:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+button{
+
+padding:8px 18px;
+
+font-size:14px;
+
+border:none;
+
+border-radius:20px;
+
+background:#38bdf8;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+button:hover{
+background:#0284c7;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0%;
+
+background:#38bdf8;
+
+transition:0.4s;
+
+}
+
+/* SLIDE NUMBER */
+
+.slide-number{
+
+position:fixed;
+
+top:15px;
+
+right:25px;
+
+font-size:14px;
+
+background:white;
+
+padding:5px 10px;
+
+border-radius:15px;
+
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar"></div>
+<div class="slide-number"></div>
+
+<div class="slides">
+
+<!-- Slide 1 -->
+
+<section class="slide active">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Pediatric Home Care</h1>
+
+<p class="subtitle">General Care for Children and Parents</p>
+
+<p>This presentation explains how parents can provide proper care for children at home.</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 2 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Introduction</h1>
+
+<ul>
+<li>Pediatric home care focuses on child health.</li>
+<li>Parents are primary caregivers.</li>
+<li>Proper care prevents illness.</li>
+<li>Health education improves outcomes.</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 3 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>General Child Care</h1>
+
+<ul>
+<li>Maintain personal hygiene.</li>
+<li>Provide balanced nutrition.</li>
+<li>Ensure proper sleep.</li>
+<li>Encourage play and exercise.</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1584367369853-9d9d9f0c8e5b">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 4 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Nutrition</h1>
+
+<ul>
+<li>Healthy fruits and vegetables.</li>
+<li>Protein for growth.</li>
+<li>Regular meal schedule.</li>
+<li>Avoid junk food.</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 5 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Care for Parents</h1>
+
+<ul>
+<li>Follow doctor instructions.</li>
+<li>Monitor child health.</li>
+<li>Provide emotional support.</li>
+<li>Recognize danger signs.</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 6 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Clinical Example</h1>
+
+<ul>
+<li>Patient: 5 year old child</li>
+<li>Symptoms: fever and cough</li>
+<li>Diagnosis: respiratory infection</li>
+<li>Treatment: rest, fluids, medication</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Slide 7 -->
+
+<section class="slide">
+
+<div class="card">
+
+<div class="text">
+
+<h1>Conclusion</h1>
+
+<ul>
+<li>Home care improves child recovery.</li>
+<li>Parents play an important role.</li>
+<li>Healthy habits prevent disease.</li>
+</ul>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb">
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<div class="controls">
+
+<button onclick="prevSlide()">Previous</button>
+<button onclick="nextSlide()">Next</button>
+
+</div>
+
+<script>
+
+let slides=document.querySelectorAll(".slide")
+let progress=document.querySelector(".progress-bar")
+let number=document.querySelector(".slide-number")
+
+let current=0
+
+function update(){
+
+slides.forEach(s=>s.classList.remove("active"))
+
+slides[current].classList.add("active")
+
+let percent=((current+1)/slides.length)*100
+
+progress.style.width=percent+"%"
+
+number.innerText=(current+1)+" / "+slides.length
+
+}
+
+function nextSlide(){
+
+current++
+
+if(current>=slides.length) current=slides.length-1
+
+update()
+
+}
+
+function prevSlide(){
+
+current--
+
+if(current<0) current=0
+
+update()
+
+}
+
+document.addEventListener("keydown",function(e){
+
+if(e.key==="ArrowRight") nextSlide()
+
+if(e.key==="ArrowLeft") prevSlide()
+
+})
+
+update()
+
+</script>
+
+</body>
+</html>
